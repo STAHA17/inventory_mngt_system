@@ -3,7 +3,7 @@
 @section('content')
     <div class="d-flex justify-content-between mb-3">
         <h1>Inventory Items</h1>
-        <a class="btn btn-primary" href="{{ route('inventory.create') }}">Add Item</a>
+        <a class="btn btn-primary" href="{{ route('inventory_items.create') }}">Add Item</a>
     </div>
 
     @if ($message = Session::get('success'))
@@ -27,9 +27,9 @@
                 <td>{{ $item->quantity }}</td>
                 <td>${{ $item->price }}</td>
                 <td>
-                    <a class="btn btn-info" href="{{ route('inventory.show', $item->id) }}">Show</a>
-                    <a class="btn btn-primary" href="{{ route('inventory.edit', $item->id) }}">Edit</a>
-                    <form action="{{ route('inventory.destroy', $item->id) }}" method="POST" style="display:inline-block;">
+                    <a class="btn btn-info" href="{{ route('inventory_items.show', $item->id) }}">Show</a>
+                    <a class="btn btn-primary" href="{{ route('inventory_items.edit', $item->id) }}">Edit</a>
+                    <form action="{{ route('inventory_items.destroy', $item->id) }}" method="POST" style="display:inline-block;">
                         @csrf
                         @method('DELETE')
                         <button type="submit" class="btn btn-danger">Delete</button>

@@ -20,6 +20,7 @@ class CreateStaffTable extends Migration
             $table->string('email')->unique();
             $table->string('phone');
             $table->enum('role', ['manager', 'receptionist', 'housekeeping', 'maintenance']);
+            $table->decimal('salary', 8, 2);
             $table->timestamps();
         });
     }

@@ -13,6 +13,8 @@ Route::resource('customers', CustomerController::class);
 Route::resource('staff', StaffController::class);
 Route::resource('inventory_items', InventoryItemController::class);
 
+// Route::get('/inventory/create', 'InventoryController@create')->name('inventory.create');
+
 Route::get('/', function () {
     return view('welcome');
 });

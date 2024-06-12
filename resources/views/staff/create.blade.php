@@ -32,8 +32,13 @@
             <input type="text" class="form-control" id="phone" name="phone" required>
         </div>
         <div class="form-group">
-            <label for="position">Position:</label>
-            <input type="text" class="form-control" id="position" name="position" required>
+            <label for="role">Role:</label>
+            <select class="form-control" id="role" name="role" required>
+                <option value="manager">Manager</option>
+                <option value="receptionist">Receptionist</option>
+                <option value="housekeeping">HouseKeeping</option>
+                <option value="maintenance">Maintenance</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="salary">Salary:</label>

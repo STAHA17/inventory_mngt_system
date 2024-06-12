@@ -8,7 +8,7 @@
         <p><strong>Quantity:</strong> {{ $inventoryItem->quantity }}</p>
         <p><strong>Price:</strong> ${{ $inventoryItem->price }}</p>
     </div>
-    <a class="btn btn-primary" href="{{ route('inventory.edit', $inventoryItem->id) }}">Edit</a>
+    <a class="btn btn-primary" href="{{ route('inventory_items.edit', $inventoryItem->id) }}">Edit</a>
     <form action="{{ route('inventory.destroy', $inventoryItem->id) }}" method="POST" style="display:inline-block;">
         @csrf
         @method('DELETE')

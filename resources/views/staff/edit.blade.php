@@ -33,8 +33,13 @@
             <input type="text" class="form-control" id="phone" name="phone" value="{{ $staff->phone }}" required>
         </div>
         <div class="form-group">
-            <label for="position">Position:</label>
-            <input type="text" class="form-control" id="position" name="position" value="{{ $staff->position }}" required>
+            <label for="role">Role:</label>
+            <select class="form-control" id="role" name="role" required>
+                <option value="manager" {{ $staffMember->role === 'manager' ? 'selected' : '' }}>Manager</option>
+                <option value="receptionist" {{ $staffMember->role === 'receptionist' ? 'selected' : '' }}>Receptionist</option>
+                <option value="housekeeping" {{ $staffMember->role === 'housekeeping' ? 'selected' : '' }}>HouseKeeping</option>
+                <option value="maintenance" {{ $staffMember->role === 'maintenance' ? 'selected' : '' }}>Maintenance</option>
+            </select>
         </div>
         <div class="form-group">
             <label for="salary">Salary:</label>

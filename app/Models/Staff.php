@@ -13,6 +13,7 @@ class Staff extends Model
         'last_name',
         'email',
         'phone',
-        'role',
+        'position',
+        'salary',
     ];
 }

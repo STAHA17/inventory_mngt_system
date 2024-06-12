@@ -13,7 +13,7 @@
         </div>
     @endif
 
-    <form action="{{ route('inventory.store') }}" method="POST">
+    <form action="{{ route('inventory_items.store') }}" method="POST">
         @csrf
         <div class="form-group">
             <label for="name">Name:</label>

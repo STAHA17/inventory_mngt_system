@@ -26,6 +26,7 @@ class StaffController extends Controller
             'email' => 'required|email|unique:staff',
             'phone' => 'required|string|max:15',
             'role' => 'required',
+            'salary' => 'required',
         ]);
 
         Staff::create($request->all());
@@ -50,6 +51,7 @@ class StaffController extends Controller
             'email' => 'required|email|unique:staff,email,' . $staff->id,
             'phone' => 'required|string|max:15',
             'role' => 'required',
+            'salary' => 'required',
         ]);
 
         $staff->update($request->all());
