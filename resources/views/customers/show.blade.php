@@ -18,6 +18,7 @@
                 @method('DELETE')
                 <button type="submit" class="btn btn-danger">Delete</button>
             </form>
+            <a class="btn btn-primary" href="{{ route('customers.index', $customer->id) }}">Back</a>
         </div>
     </div>
 @endsection

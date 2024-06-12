@@ -37,5 +37,6 @@
             <textarea class="form-control" id="address" name="address" required>{{ $customer->address }}</textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-primary" href="{{ route('customers.index', $customer->id) }}">Back</a>
     </form>
 @endsection

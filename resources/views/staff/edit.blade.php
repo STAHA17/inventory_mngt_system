@@ -35,10 +35,10 @@
         <div class="form-group">
             <label for="role">Role:</label>
             <select class="form-control" id="role" name="role" required>
-                <option value="manager" {{ $staffMember->role === 'manager' ? 'selected' : '' }}>Manager</option>
-                <option value="receptionist" {{ $staffMember->role === 'receptionist' ? 'selected' : '' }}>Receptionist</option>
-                <option value="housekeeping" {{ $staffMember->role === 'housekeeping' ? 'selected' : '' }}>HouseKeeping</option>
-                <option value="maintenance" {{ $staffMember->role === 'maintenance' ? 'selected' : '' }}>Maintenance</option>
+                <option value="manager" {{ $staff->role === 'manager' ? 'selected' : '' }}>Manager</option>
+                <option value="receptionist" {{ $staff->role === 'receptionist' ? 'selected' : '' }}>Receptionist</option>
+                <option value="housekeeping" {{ $staff->role === 'housekeeping' ? 'selected' : '' }}>HouseKeeping</option>
+                <option value="maintenance" {{ $staff->role === 'maintenance' ? 'selected' : '' }}>Maintenance</option>
             </select>
         </div>
         <div class="form-group">
@@ -46,5 +46,6 @@
             <input type="number" class="form-control" id="salary" name="salary" value="{{ $staff->salary }}" step="0.01" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-primary" href="{{ route('staff.index', $staff->id) }}">Back</a>
     </form>
 @endsection
