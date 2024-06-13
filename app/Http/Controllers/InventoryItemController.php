@@ -31,9 +31,15 @@ class InventoryItemController extends Controller
         return redirect()->route('inventory_items.index')->with('success', 'Inventory item created successfully.');
     }
 
-    public function show(InventoryItem $inventoryItem)
+    // public function show(InventoryItem $inventoryItem)
+    // {
+    //     return view('inventory_items.show', compact('inventoryItem'));
+    // }
+
+    public function show($id)
     {
-        return view('inventory_items.show', compact('inventoryItem'));
+        $inventory_item = InventoryItem::findOrFail($id);
+        return view('inventory_items.show', compact('inventory_item'));
     }
 
     public function edit(InventoryItem $inventoryItem)

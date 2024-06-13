@@ -9,8 +9,8 @@
         <div class="card-body">
             <p><strong>Customer:</strong> {{ $booking->customer->first_name }} {{ $booking->customer->last_name }}</p>
             <p><strong>Room:</strong> {{ $booking->room->room_number }}</p>
-            <p><strong>Check-in Date:</strong> {{ $booking->check_in_date }}</p>
-            <p><strong>Check-out Date:</strong> {{ $booking->check_out_date }}</p>
+            <p><strong>Check-in Date:</strong> {{ $booking->check_in }}</p>
+            <p><strong>Check-out Date:</strong> {{ $booking->check_out }}</p>
             <p><strong>Status:</strong> {{ $booking->status }}</p>
             <a class="btn btn-primary" href="{{ route('bookings.edit', $booking->id) }}">Edit</a>
             <form action="{{ route('bookings.destroy', $booking->id) }}" method="POST" style="display:inline-block;">
