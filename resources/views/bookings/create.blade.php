@@ -49,6 +49,7 @@
                 <option value="confirmed">Confirmed</option>
                 <option value="checked_in">Checked In</option>
                 <option value="checked_out">Checked Out</option>
+                <option value="cancelled">Cancelled</option>
             </select>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>

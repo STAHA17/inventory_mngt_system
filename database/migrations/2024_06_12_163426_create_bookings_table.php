@@ -20,7 +20,7 @@ class CreateBookingsTable extends Migration
             $table->date('check_in');
             $table->date('check_out');
             $table->decimal('total_price', 10, 2);
-            $table->enum('status', ['booked', 'checked_in', 'checked_out', 'cancelled']);
+            $table->enum('status', ['confirmed', 'checked_in', 'checked_out', 'cancelled']);
             $table->timestamps();
 
             //$table->foreign('room_id')->references('id')->on('rooms')->onDelete('cascade');
