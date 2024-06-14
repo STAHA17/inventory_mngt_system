@@ -36,5 +36,6 @@
             <textarea class="form-control" id="address" name="address" required></textarea>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" href="{{ route('customers.index') }}">Back</a>
     </form>
 @endsection

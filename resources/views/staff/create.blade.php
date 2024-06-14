@@ -45,5 +45,6 @@
             <input type="number" class="form-control" id="salary" name="salary" step="0.01" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" href="{{ route('staff.index') }}">Back</a>
     </form>
 @endsection

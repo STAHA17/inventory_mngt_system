@@ -32,5 +32,6 @@
             <input type="number" step="0.01" class="form-control" id="price" name="price" required>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" href="{{ route('inventory_items.index') }}">Back</a>
     </form>
 @endsection

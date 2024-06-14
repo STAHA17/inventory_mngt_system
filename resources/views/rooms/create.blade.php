@@ -44,5 +44,6 @@
             </select>
         </div>
         <button type="submit" class="btn btn-primary">Submit</button>
+        <a class="btn btn-secondary" href="{{ route('rooms.index') }}">Back</a>
     </form>
 @endsection

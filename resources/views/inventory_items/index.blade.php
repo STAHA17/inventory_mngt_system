@@ -1,9 +1,9 @@
 @extends('layouts.app')
 
 @section('content')
-    <div class="d-flex justify-content-between mb-3">
+    <div class="justify-content-between mb-3">
         <h1>Inventory Items</h1>
-        <a class="btn btn-primary" href="{{ route('inventory_items.create') }}">Add Item</a>
+        <a class="btn btn-secondary" href="{{ route('inventory_items.create') }}">Add Items</a>
     </div>
 
     @if ($message = Session::get('success'))
