@@ -28,7 +28,7 @@
                 <td>{{ $member->last_name }}</td>
                 <td>{{ $member->email }}</td>
                 <td>{{ $member->phone }}</td>
-                <td>{{ $member->position }}</td>
+                <td>{{ $member->role }}</td>
                 <td>{{ $member->salary }}</td>
                 <td>
                     <a class="btn btn-info" href="{{ route('staff.show', $member->id) }}">Show</a>
