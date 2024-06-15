@@ -13,7 +13,7 @@
     @endif
 
     <table class="table table-bordered">
-        <tr>
+        <tr class="bg-secondary text-light">
             <th>First Name</th>
             <th>Last Name</th>
             <th>Email</th>
